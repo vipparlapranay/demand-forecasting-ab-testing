@@ -1,0 +1,42 @@
+{
+  "forecasting": {
+    "frequency": "weekly",
+    "products": 12,
+    "stores": 8,
+    "product_store_series": 96,
+    "history_weeks": 208,
+    "rolling_origin_folds": 5,
+    "horizon_weeks_per_fold": 4,
+    "holdout_weeks_scored": 20,
+    "holdout_series_week_observations": 1920,
+    "lightgbm_wape_pct": 14.3276,
+    "seasonal_naive_wape_pct": 18.0712,
+    "wape_improvement_pct": 20.7158,
+    "beats_seasonal_naive": true
+  },
+  "ab_test": {
+    "test": "two-sided two-proportion z-test",
+    "alpha": 0.05,
+    "confidence_level_pct": 95.0,
+    "control_users": 10000,
+    "treatment_users": 10000,
+    "control_conversions": 1235,
+    "treatment_conversions": 1188,
+    "control_conversion_rate_pct": 12.35,
+    "treatment_conversion_rate_pct": 11.88,
+    "absolute_lift_percentage_points": -0.47,
+    "relative_lift_pct": -3.8057,
+    "lift_confidence_interval_percentage_points": [
+      -1.3744,
+      0.4344
+    ],
+    "z_statistic": -1.0185,
+    "p_value": 0.308437,
+    "statistically_significant": false,
+    "required_users_per_group_for_mde": 7756,
+    "planned_minimum_detectable_effect_percentage_points": 1.5,
+    "target_power_pct": 80.0,
+    "conclusion": "No statistically significant conversion-rate lift at the 95% confidence level."
+  },
+  "disclaimer": "Metrics are from reproducible synthetic data; they are not production or business-impact results."
+}
